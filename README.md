@@ -8,3 +8,11 @@ A documentation on how to get started with Docker Swarm Monitoring
 - [promstack](https://github.com/YouMightNotNeedKubernetes/promstack): A high-availability prometheus/alertmanager stack for Docker Swarm.
 - [promagents](https://github.com/YouMightNotNeedKubernetes/promagents): Docker Stack deployment for cAdvisor & node-exporter.
 - [promtail](https://github.com/YouMightNotNeedKubernetes/promtail): Docker Stack deployment for Grafana Loki's Promtail.
+
+## Getting Started
+
+You will need to create swarm-scoped overlay network called `dockerswarm_monitoring` for all the stacks to communicate.
+
+```sh
+$ docker network create --driver overlay --attachable dockerswarm_monitoring
+```
