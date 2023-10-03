@@ -1,6 +1,7 @@
 > [!WARNING]
 > This documentation and stacks are currently a work-in-progress.
 
+
 # Docker Swarm Monitoring Guide
 A documentation on how to get started with Docker Swarm Monitoring
 
@@ -11,6 +12,10 @@ A documentation on how to get started with Docker Swarm Monitoring
 - [promstack](https://github.com/YouMightNotNeedKubernetes/promstack): A high-availability prometheus/alertmanager stack for Docker Swarm.
 - [promagents](https://github.com/YouMightNotNeedKubernetes/promagents): Docker Stack deployment for cAdvisor & node-exporter.
 - [promtail](https://github.com/YouMightNotNeedKubernetes/promtail): Docker Stack deployment for Grafana Loki's Promtail.
+
+## Architecture Overview
+
+![Architecture Overview](https://github.com/YouMightNotNeedKubernetes/dockerswarm-monitoring-guide/assets/4363857/73cc89b6-6858-49cc-9f4d-f7da11a3a48d)
 
 ## Getting Started
 
