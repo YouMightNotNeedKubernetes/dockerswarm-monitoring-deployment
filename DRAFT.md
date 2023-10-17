@@ -114,17 +114,6 @@ The prometheus and alertmanager will be deployed as shown in this diagram.
 
 ![prometheus and alertmanager](https://user-images.githubusercontent.com/4363857/272507328-3a3e407e-d95a-4cad-afe6-f0259803943d.png)
 
-### Deploy prometheus
-
-By default, it will deploy 2 replicas of Prometheus. Having more than 2 replicas is way too much for a small cluster.
-
-```sh
-# https://github.com/YouMightNotNeedKubernetes/prometheus
-$ gh repo clone YouMightNotNeedKubernetes/prometheus
-$ cd prometheus
-$ make deploy
-```
-
 ### Deploy alertmanager
 
 By default, it will deploy 3 replicas of Alertmanager. Having more than 3 replicas is way too much for a small cluster.
@@ -133,6 +122,17 @@ By default, it will deploy 3 replicas of Alertmanager. Having more than 3 replic
 # https://github.com/YouMightNotNeedKubernetes/alertmanager
 $ gh repo clone YouMightNotNeedKubernetes/alertmanager
 $ cd alertmanager
+$ make deploy
+```
+
+### Deploy prometheus
+
+By default, it will deploy 2 replicas of Prometheus. Having more than 2 replicas is way too much for a small cluster.
+
+```sh
+# https://github.com/YouMightNotNeedKubernetes/prometheus
+$ gh repo clone YouMightNotNeedKubernetes/prometheus
+$ cd prometheus
 $ make deploy
 ```
 
