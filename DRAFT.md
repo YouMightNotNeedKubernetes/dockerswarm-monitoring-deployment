@@ -15,15 +15,15 @@ A documentation on how to get started with Docker Swarm Monitoring
 - [promagents](https://github.com/YouMightNotNeedKubernetes/promagents): Docker Stack deployment for cAdvisor & node-exporter.
 
 **Additional Stacks**
-- [etcd](https://github.com/YouMightNotNeedKubernetes/etcd): A high-availability Etcd deployment for Docker Swarm
-- [postgresql-spilo](https://github.com/YouMightNotNeedKubernetes/postgresql-spilo): Postgres High Availability with patroni/spilo for Docker Swarm
-- [minio](https://github.com/YouMightNotNeedKubernetes/minio): Docker Stack deployment for MinIO Object Storage.
-
 > [!NOTE]
 > The PostgreSQL cluster using Spilo required `etcd` to be deployed first. If you planned to use alternative solution, you can skip this stack.
 
 > [!NOTE]
 > The MinIO Object Storage required for `grafana-mimir` and `grafana-loki` and need to be deployed first. If you planned to use Amazon S3, you can skip this stack.
+
+- [etcd](https://github.com/YouMightNotNeedKubernetes/etcd): A high-availability Etcd deployment for Docker Swarm
+- [postgresql-spilo](https://github.com/YouMightNotNeedKubernetes/postgresql-spilo): Postgres High Availability with patroni/spilo for Docker Swarm
+- [minio](https://github.com/YouMightNotNeedKubernetes/minio): Docker Stack deployment for MinIO Object Storage.
 
 ## Architecture Overview
 
