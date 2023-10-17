@@ -1,7 +1,6 @@
 > [!WARNING]
 > This documentation and stacks are currently a work-in-progress.
 
-
 # Docker Swarm Monitoring Guide
 A documentation on how to get started with Docker Swarm Monitoring
 
@@ -32,16 +31,6 @@ A documentation on how to get started with Docker Swarm Monitoring
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/YouMightNotNeedKubernetes/dockerswarm-monitoring-guide/assets/4363857/b645d44a-c93d-4764-a34f-87cbdb25671e">
   <img alt="Architecture Overview" src="https://github.com/YouMightNotNeedKubernetes/dockerswarm-monitoring-guide/assets/4363857/507dc46d-0537-45d2-a01a-11c6f57485b2">
 </picture>
-
-## Getting Started
-
-You might need to create swarm-scoped overlay network called dockerswarm_monitoring for all the stacks to communicate if you haven't already.
-
-On the manager node, run the following command:
-
-```sh
-$ docker network create --driver overlay --attachable dockerswarm_monitoring
-```
 
 ## Prerequisites
 
@@ -83,6 +72,15 @@ $ docker node update --label-add consul=true monitoring-manager-3
 > Repeat the same process for other labels.
 > See **Server placement** on each stack you planned to deploy.
 
+## Getting Started
+
+You might need to create swarm-scoped overlay network called dockerswarm_monitoring for all the stacks to communicate if you haven't already.
+
+On the manager node, run the following command:
+
+```sh
+$ docker network create --driver overlay --attachable dockerswarm_monitoring
+```
 
 ## Deploy promtail and promagents
 
