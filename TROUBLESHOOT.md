@@ -20,5 +20,5 @@ $ docker node ls -q | xargs docker node inspect -f '{{ .ID }}    {{ .Description
 ### Remove all labels from all nodes
 
 ```
-docker node ls -q | xargs docker node inspect -f 'docker node update {{ range $k, $v := .Spec.Labels }} --label-rm {{ $k }}{{end}} {{.Description.Hostname}}' | bash
+$ docker node ls -q | xargs docker node inspect -f 'docker node update {{ range $k, $v := .Spec.Labels }} --label-rm {{ $k }}{{end}} {{.Description.Hostname}}' | bash
 ```

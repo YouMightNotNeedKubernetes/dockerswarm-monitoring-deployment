@@ -135,3 +135,68 @@ $ gh repo clone YouMightNotNeedKubernetes/alertmanager
 $ cd alertmanager
 $ make deploy
 ```
+
+## Deploy Object Storage and Database
+
+### MinIO
+
+> [!NOTE]
+> The MinIO Object Storage required for `grafana-mimir` and `grafana-loki` and need to be deployed first. If you planned to use Amazon S3, you can skip this stack.
+
+See https://github.com/YouMightNotNeedKubernetes/minio for how to deploy MinIO.
+
+### PostgreSQL
+
+> [!NOTE]
+> The PostgreSQL cluster using Spilo required `etcd` to be deployed first. If you planned to use alternative solution, you can skip this stack.
+
+See https://github.com/YouMightNotNeedKubernetes/etcd for how to deploy etcd.
+
+See https://github.com/YouMightNotNeedKubernetes/postgresql-spilo for how to deploy PostgreSQL.
+
+## Deploy HashiCorp Consul
+
+> [!IMPORTANT]
+> HashiCorp Consul is required for `grafana-mimir` and `grafana-loki` stack. For deploying a high-availability cluster.
+
+```sh
+# https://github.com/YouMightNotNeedKubernetes/hashicorp-consul
+$ gh repo clone YouMightNotNeedKubernetes/hashicorp-consul
+$ cd hashicorp-consul
+$ make deploy
+```
+
+See https://github.com/YouMightNotNeedKubernetes/hashicorp-consul for how to deploy HashiCorp Consul.
+
+## Deploy Grafana Loki
+
+```sh
+# https://github.com/YouMightNotNeedKubernetes/grafana-loki
+$ gh repo clone YouMightNotNeedKubernetes/grafana-loki
+$ cd grafana-loki
+$ make deploy
+```
+
+See https://github.com/YouMightNotNeedKubernetes/grafana-loki for how to configure Grafana Loki.
+
+## Deploy Grafana Mimir
+
+```sh
+# https://github.com/YouMightNotNeedKubernetes/grafana-mimir
+$ gh repo clone YouMightNotNeedKubernetes/grafana-mimir
+$ cd grafana-mimir
+$ make deploy
+```
+
+See https://github.com/YouMightNotNeedKubernetes/grafana-mimir for how to configure Grafana Mimir.
+
+## Deploy Grafana Dashboard
+
+```sh
+# https://github.com/YouMightNotNeedKubernetes/grafana
+$ gh repo clone YouMightNotNeedKubernetes/grafana
+$ cd grafana
+$ make deploy
+```
+
+See https://github.com/YouMightNotNeedKubernetes/grafana for how to configure Grafana Dashboard.
