@@ -14,6 +14,17 @@ A documentation on how to get started with Docker Swarm Monitoring
 - [alertmanager](https://github.com/YouMightNotNeedKubernetes/alertmanager): AboutA high-availability alertmanager stack for Docker Swarm.
 - [promagents](https://github.com/YouMightNotNeedKubernetes/promagents): Docker Stack deployment for cAdvisor & node-exporter.
 
+**Additional Stacks**
+- [etcd](https://github.com/YouMightNotNeedKubernetes/etcd): A high-availability Etcd deployment for Docker Swarm
+- [postgresql-spilo](https://github.com/YouMightNotNeedKubernetes/postgresql-spilo): Postgres High Availability with patroni/spilo for Docker Swarm
+- [minio](https://github.com/YouMightNotNeedKubernetes/minio): Docker Stack deployment for MinIO Object Storage.
+
+> [!NOTE]
+> The PostgreSQL cluster using Spilo required `etcd` to be deployed first. If you planned to use alternative solution, you can skip this stack.
+
+> [!NOTE]
+> The MinIO Object Storage required for `grafana-mimir` and `grafana-loki` and need to be deployed first. If you planned to use Amazon S3, you can skip this stack.
+
 ## Architecture Overview
 
 <picture>
@@ -35,8 +46,6 @@ $ docker network create --driver overlay --attachable dockerswarm_monitoring
 ## Prerequisites
 
 - A Docker Swarm cluster with at least 3 managers and 7 workers.
-
-## Here an example deployment
 
 This is an example of a 10 nodes cluster with 3 managers and 7 workers and their associated labels.
 
