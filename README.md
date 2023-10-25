@@ -70,7 +70,7 @@ You might need to create swarm-scoped overlay network called dockerswarm_monitor
 On the manager node, run the following command:
 
 ```sh
-$ docker network create --driver overlay --attachable dockerswarm_monitoring
+$ docker network create --scope=swarm --driver overlay --attachable dockerswarm_monitoring
 ```
 
 ## Deploy promtail and promagents
