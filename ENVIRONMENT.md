@@ -17,7 +17,8 @@ export GRAFANA_VERSION=latest
 # ===============================================================
 export GRAFANA_LOKI_VERSION=latest
 # export GRAFANA_LOKI_REPLICAS=3
-# export GRAFANA_LOKI_PORT=3100
+# export GRAFANA_LOKI_HTTP_LISTEN_PORT=3100
+# export GRAFANA_LOKI_GRPC_LISTEN_PORT=9096
 
 # Promtail
 # Please set PROMTAIL_VERSION to the same version as GRAFANA_LOKI_VERSION
@@ -30,7 +31,8 @@ export PROMTAIL_VERSION=latest
 # ===============================================================
 export GRAFANA_MIMIR_VERSION=latest
 # export GRAFANA_MIMIR_REPLICAS=3
-# export GRAFANA_MIMIR_PORT=3200
+# export GRAFANA_MIMIR_HTTP_LISTEN_PORT=3200
+# export GRAFANA_MIMIR_GRPC_LISTEN_PORT=9097
 
 # ===============================================================
 # Prometheus
