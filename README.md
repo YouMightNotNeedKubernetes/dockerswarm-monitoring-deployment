@@ -5,9 +5,10 @@
 A documentation on how to get started with Docker Swarm Monitoring
 
 ## Stacks
-- [grafana](https://github.com/YouMightNotNeedKubernetes/grafana): Docker Stack deployment for Grafana's Dashboard.
-- [grafana-mimir](https://github.com/YouMightNotNeedKubernetes/grafana-mimir): A high-availability Grafana Mimir deployment for Docker Swarm.
 - [grafana-loki](https://github.com/YouMightNotNeedKubernetes/grafana-loki): A high-availability Grafana Loki deployment for Docker Swarm.
+- [grafana](https://github.com/YouMightNotNeedKubernetes/grafana): Docker Stack deployment for Grafana's Dashboard.
+- [grafana-tempo](https://github.com/YouMightNotNeedKubernetes/grafana-tempo): A high-availability Grafana Tempo deployment for Docker Swarm.
+- [grafana-mimir](https://github.com/YouMightNotNeedKubernetes/grafana-mimir): A high-availability Grafana Mimir deployment for Docker Swarm.
 - [promtail](https://github.com/YouMightNotNeedKubernetes/promtail): Docker Stack deployment for Grafana Loki's Promtail.
 - [prometheus](https://github.com/YouMightNotNeedKubernetes/prometheus): A high-availability prometheus stack for Docker Swarm.
 - [alertmanager](https://github.com/YouMightNotNeedKubernetes/alertmanager): AboutA high-availability alertmanager stack for Docker Swarm.
