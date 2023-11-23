@@ -16,7 +16,7 @@ A documentation on how to get started with Docker Swarm Monitoring
 
 ## Architecture Overview
 
-![Architecture Overview](https://github.com/YouMightNotNeedKubernetes/dockerswarm-monitoring-for-scale-guide/assets/4363857/3651b788-a0e0-42c5-9084-db06bc4851ef)
+![Architecture Overview](https://github.com/YouMightNotNeedKubernetes/dockerswarm-monitoring-for-scale-guide/assets/4363857/eec1f78b-33a0-4835-b6d7-77ad3b3d676a)
 
 ## Prerequisites
 
